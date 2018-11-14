@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="211dp"
+        android:text="Bitcoin"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        app:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="47dp"
+        android:text="Euros"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        app:fontFamily="sans-serif" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="341dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/euro_input"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:hint="Input euros..." />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="277dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/bitcoin_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input bitcoins..." />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>
