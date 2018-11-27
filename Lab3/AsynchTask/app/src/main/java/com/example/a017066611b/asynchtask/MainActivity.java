@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.progress_bar = (ProgressBar) findViewById(R.id.progressBar);
         this.text_view = (TextView) findViewById(R.id.textView);
 
-        Random rand = new Random();
-        this.MAX_NUMBER = rand.nextInt(50) + 1;
     }
 
     @Override
     public void onClick(View v) {
 
+        Random rand = new Random();
+        this.MAX_NUMBER = rand.nextInt(50) + 1;
 
         AsyncTask<Void,Integer,String> A = new AsyncTask<Void, Integer, String>() {
 
